@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="./style.css" />
 	
-    <title>Mentor Dashboard</title>
+    <title>Mentor List</title>
   </head>
   <body>
     <nav>
@@ -37,36 +37,25 @@
     </nav>
 
     <main class="p-2">
-    
+      
       <!--Name-->
       <div class="container-fluid">
-        <h1 id="name"></h1>
-        <small>Mentor</small>
+        <h1 id="name">Our Wonderful Mentors</h1>
       </div>
       
-      <!--Tags-->
-      <div id="tags" class="tags container-fluid">
-      </div>
-      
-      <!--Intro Video-->
-      <div id="intro" class="mt-5 container-fluid">
-        <h2>Intro Video</h2>
-        <div id="intro-vid"></div>
-      </div>
-      
-      <div class="posted-videos mt-5 container-fluid">
-        <h2>Posted Videos</h2>
-        <div id="posted-vid" class="row"></div>
+      <div id="forn" style="display:flex;width:80%;
+        max-width:300px;
+        margin:auto;
+        display:flex;">
+      <div><input type="search" placeholder="Search for mentor..." /></div>
+      <div class="butt"><i class="fa fa-search"></i></div>
       </div>
     </main>
-
-	<footer>
-	  <i class="fa fa-edit foot"></i>
-	  <i class="fa plus foot">+</i>
-	  <i class="fa fa-envelope foot"></i>
-	</footer>
+    <div class="mt-5 container-fluid">
+      <div id="mentors" class="row"></div>
+    </div>
+    
 	
-
 
 
     <!-- Optional JavaScript -->
@@ -74,6 +63,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./mentor-list.js"></script>
   </body>
 </html>

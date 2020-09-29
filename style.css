@@ -245,3 +245,25 @@ p{
 .view-mentors:active {
   opacity:0.5;
 }
+
+.avatar {
+  background-color:#c4c4c4;
+  display: flex;
+  justify-content:center;
+}
+.card{margin:10px 5px;}
+
+#mentors {
+  justify-content: center;
+  width: 100vw;
+}
+.btn-secondary {
+  background-color:var(--green);
+  padding:5px;
+}
+h3 {
+  font-weight:800;
+}
+.avatarr {
+  font-size:9rem;
+}
