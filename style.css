@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&family=Peddana&display=swap');
+
+:root {
+  --green: rgb(25,200,128);
+  --blue: rgb(25,128,200);
+  --black: #303030;
+  --red: rgb(200,25,128);
+  --yellow: #fed217;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Baloo Tammudu 2";
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--black);
+  font-size: 3rem;
+}
+
+
+small {
+  display: block;
+  font-family:'Peddana';
+  color: var(--green);
+  font-size:1.5rem;
+  margin-top:-20px;
+}
+
+nav, .user {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-between;
+  height:70px;
+  padding:20px;
+}
+   
+.user {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(25, 200, 128, 0.2);
+  border-radius:50px;
+  justify-content: center;
+}
+
+.fa-user {
+  font-size: 30px;
+  color: var(--green);
+}
+
+/*Menu icon */
+.menu div {
+  width: 30px;
+  height: 4px;
+  background-color: var(--black);
+  margin: 5px 0;
+}
+
+.menu div:nth-child(2) {
+  background-color:var(--green);
+  width:20px;
+  margin-left: 10px;
+}
+
+.content {
+  background-color:var(--green);
+  width:60vw;
+  max-width:260px;
+  display: none;
+}
+a {
+  font-size:1.3rem;
+}
+
+//Tags styling
+.container .tags {
+  display: flex !important;
+}
+.tag {
+  background-color:rgba(25, 200, 128, 0.2);
+  color: var(--green);
+  padding: 3px 10px;
+  border-radius:15px;
+  border: 1px solid var(--green);
+  display:inline-flex;
+  margin:10px 15px 0 0;
+  font-weight:600;
+}
+
+//Intro.Video
+#intro {
+  margin-top: 99px;
+}
+#intro div {
+  justify-content:space-between;
+  min-height:5px;
+  align-items:center;
+}
+
+.video , .video-controls{
+  width: 100%;
+  //max-width:350px;
+  display: block;
+  margin: auto;
+  height: 45vw;
+  max-height:175px;
+}
+
+.video-controls {
+  height:auto;
+  padding-bottom:10px;
+  display: flex;
+  justify-content:center !important;
+}
+.vid {
+  border: 1px solid rgb(25, 200, 128, 0.1);
+  margin: 10px 0;
+  padding-bottom:-10px;
+}
+.icon, .foot {
+  margin: 0 20px;
+  color: var(--white);
+}
+
+footer {
+  background-color:var(--green);
+  position:fixed;
+  width:100vw;
+  height:60px;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.foot{
+  font-size:2rem;
+}
+.plus {
+  border: 2px solid var(--white);
+  width:30px;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:4px;
+}
+p{
+  margin-top:10px;
+  font-size:1.2rem;
+}
+.green {
+  background-color: var(--green);
+}
+.blue {
+  background-color: var(--blue);
+}
+.red {
+  background-color: var(--red);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+
+
+@media (max-width:767px) {
+  .content {
+    position: fixed;
+    right:0;
+    top:0;
+    height:100vh;
+    bottom:0;
+    z-index: 5;
+    box-shadow:-5px -5px 5px rgba(0,0,0,0.1);
+  }
+  .content a, #close {
+    padding: 10px 10px;
+    color: white;
+    display: block;
+    clear: right;
+  }
+  #close {
+    float: right;
+    font-size:2.3rem;
+    padding: 0 20px 0 0;
+  }
+  .content a:hover {
+    color: var(--green);
+    background-color:var(--white);
+    text-decoration:none;
+  }
+}
+
+@media (min-width:768px) {
+  .content {
+    background-color: transparent;
+    display: flex;
+  }
+  .content a {
+    color: var(--black);
+    margin: 15px;
+  }
+  .menu, #close {
+    display: none;
+  }
+}
