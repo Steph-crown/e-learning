@@ -209,3 +209,39 @@ p{
     display: none;
   }
 }
+
+
+
+
+
+
+#forn div {
+  width:85%;
+}
+
+#forn div input{
+  width:100%;
+  border: 2px solid var(--green);
+  outline: none;
+  border-radius:30px 0 0 30px;
+  padding: 5px 15px;
+}
+
+#forn div.butt{
+  width:15%;
+  background-color:var(--green);
+  color: var(--white);
+  border-radius:0 30px 30px 0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.view-mentors {
+  color: var(--white);
+  height:40px;
+  transition: 1s;
+}
+.view-mentors:active {
+  opacity:0.5;
+}
